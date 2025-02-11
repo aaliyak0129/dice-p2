@@ -240,9 +240,9 @@ button {
     animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
 
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
  
-    left: 450px;
+    left: 300px;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080;
 }
