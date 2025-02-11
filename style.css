@@ -242,6 +242,8 @@ button {
     background: rgba(0, 0, 255, 0.136);
     cursor: pointer;
     outline: none;
+    position: absolute;
+ bottom: 30px;
     animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
  
     transition: 0.3s ease-in-out;
