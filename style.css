@@ -244,7 +244,7 @@ button {
     outline: none;
     position: absolute;
  bottom: 30px;
- right: 30px;
+ right: 10px;
     animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
  
     transition: 0.3s ease-in-out;
