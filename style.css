@@ -1,0 +1,254 @@
+body{
+background-image: url(/dom.jpg);
+background-size:cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c, 0 0 30px #ff003c; }
+    50% { box-shadow: 0 0 20px #ff003c, 0 0 30px #ff003c, 0 0 40px #ff003c; }
+    100% { box-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c, 0 0 30px #ff003c; }
+} 
+
+
+
+/* Neon Glow Effect */
+@keyframes neonGlow {
+    0% { box-shadow: 0 0 10px #ff00ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff; }
+    50% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff; }
+    100% { box-shadow: 0 0 10px #ff00ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff; }
+}
+
+/* -------------------BOX-1------------------------ */
+
+#box1{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    border: none;
+    background: linear-gradient(45deg, hsl(340, 85%, 63%), #8312f4, #ff0088, #f060b4);
+    background-size: 300% 300%;
+    animation: neonBackground 6s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    /* opacity: 0%; */
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+
+ }
+#box1 div{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+    background-color:  rgb(39, 20, 213);
+    box-shadow: 0 0 15px #ff003c, 0 0 25px #ff003c;
+}
+
+
+
+#box2{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: linear-gradient(45deg, hsl(340, 85%, 63%), #8312f4, #ff0088, #f060b4);
+    background-size: 300% 300%;
+    animation: neonBackground 6s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    gap: 20%;
+    opacity: 0%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+
+}
+#box2 div{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+    box-shadow: 0 0 15px #ff003c, 0 0 25px #ff003c;
+    background-color: rgb(39, 20, 213);
+} 
+
+
+
+/* -------------------BOX-3------------------------ */
+
+#box3{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, hsl(340, 85%, 63%), #8312f4, #ff0088, #f060b4);
+    background-size: 300% 300%;
+    animation: neonBackground 6s infinite alternate;
+    border-radius: 20%;
+  justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    gap: 10%;
+    left: 40%;
+    opacity: 0%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+
+}
+#box3 div{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: rgb(39, 20, 213);
+    box-shadow: 0 0 15px  #ff003c, 0 0 25px #ff003c;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(39, 20, 213);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 15px #ff003c, 0 0 25px #ff003c;
+
+}
+
+.dot:nth-child(1) { top: 20px; left: 20px; }
+.dot:nth-child(2) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.dot:nth-child(3) { bottom: 20px; right: 20px; }
+
+
+/* -------------------BOX-4------------------------ */* 
+#box4{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: linear-gradient(45deg, hsl(340, 85%, 63%), #8312f4, #ff0088, #f060b4);
+    background-size: 300% 300%;
+    animation: neonBackground 6s infinite alternate;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    opacity: 0%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+
+}
+#box4 div{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    border-radius:50%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+    background-color:  rgb(39, 20, 213);
+    box-shadow: 0 0 15px  #ff003c, 0 0 25px #ff003c;
+}
+
+
+/* -------------------BOX-5------------------------ */
+
+ #box5{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: linear-gradient(45deg, hsl(340, 85%, 63%), #8312f4, #ff0088, #f060b4);
+    background-size: 300% 300%;
+    animation: neonBackground 6s infinite alternate;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    gap: 30%;
+    left: 40%;
+    opacity: 0%;
+    animation: float 3s ease-in-out infinite, glow 1s infinite alternate;
+
+ }
+#box5 div{
+    width: 50px;
+    height: 50px;
+    margin-left: 30%;
+    /* margin-right: 50px; */
+    margin-top: 40%;
+    border-radius:50%;
+    background-color:  rgb(39, 20, 213);
+    box-shadow: 0 0 15px  #ff003c, 0 0 25px #ff003c;
+}
+#box5 .dot6{
+    position: relative;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+    bottom: 300%;
+    left: 90%;
+}
+/* -------------------BOX-6------------------------ */
+
+#box6{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: linear-gradient(45deg, hsl(340, 85%, 63%), #8312f4, #ff0088, #f060b4);
+    background-size: 300% 300%;
+    animation: neonBackground 6s infinite alternate;
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: 2fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    opacity: 0%;    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+
+}
+#box6 div{
+    width: 50px;
+    height: 50px;
+    margin-left: 35%;
+    border-radius:50%;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+    background-color:  rgb(39, 20, 213);
+    box-shadow: 0 0 15px #ff003c, 0 0 25px #ff003c;
+} 
+
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 3px solid #ff0080; /* Change to #00f7ff for Neon Blue */
+    color: #fcfbfe;
+    text-transform: uppercase;
+    background: rgba(0, 0, 255, 0.136);
+    cursor: pointer;
+    outline: none;
+    animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+
+    position: absolute;
+    bottom: 50px;
+ 
+    left: 550px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 51, 0.2);
+    color: rgb(252, 252, 254);
+    box-shadow: 0 0 20px #ff0080, 0 0 60px #ff0080, 0 0 100px #ff0080;
+}
