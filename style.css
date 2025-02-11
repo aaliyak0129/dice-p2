@@ -255,3 +255,13 @@ button:hover {
     color: rgb(252, 252, 254);
     box-shadow: 0 0 20px #ff0080, 0 0 60px #ff0080, 0 0 100px #ff0080;
 }
+p{font-size: 24px;
+  font-weight: bold;
+  color: #fefefe; /* Neon color */
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(0, 0, 255, 0.136);
+  animation: float 3s ease-in-out infinite,glow 1s infinite alternate;
+}
