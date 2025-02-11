@@ -242,7 +242,7 @@ button {
     position: absolute;
     bottom: 150px;
  
-    left: 250px;
+    left: 100px;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 10px #ff0080, 0 0 40px #ff0080, 0 0 80px #ff0080;
 }
